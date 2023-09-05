@@ -10,7 +10,7 @@ const Register = () => {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [errors, setErrors] = useState({});
-  const [setCookie] = useCookies(["token"]);
+  const [cookie, setCookie] = useCookies(["token"]);
   const [errorMessage, setErrorMessage] = useState(""); // Added error message state
 
   const handleSubmit = async (e) => {
