@@ -9,7 +9,8 @@ const Navbar = () => {
   const [loggedIn, setLoggedIn] = useState(false);
   const [searchVisible, setSearchVisible] = useState(false);
   const [search, setSearch] = useState("");
-  const getMovies = () => {
+  const getMovies = (e) => {
+    e.preventDefault()
     navigate(`/search/${search}`);
   };
   useEffect(() => {
