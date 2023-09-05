@@ -55,7 +55,7 @@ const Navbar = () => {
               as="button"
               onClick={() => {
                 localStorage.removeItem("token");
-                window.location.reload();
+                window.location.assign("/");
               }}
               className="learn_button"
             >
