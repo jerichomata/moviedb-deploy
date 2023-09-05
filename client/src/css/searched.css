@@ -1,0 +1,42 @@
+.searched-movie-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 80px;
+    align-items: center;
+    justify-content: center;
+}
+  
+.searched-movie-details {
+    margin-top: 180px;
+}
+
+.release-date {
+    color: rgb(157, 78, 221) !important;
+    text-align: left;
+    bottom: -10px;
+    text-decoration: none;
+}
+
+.movie-overview {
+    text-align: left;
+}
+
+.searched_pagination {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(21, 21, 22);
+    justify-content: space-around;
+    width: 100%;
+    color: #ccc;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 70px;
+}
+
+.search_container {
+    display: flex;
+    gap: 10px;
+    background-color: transparent;
+  }

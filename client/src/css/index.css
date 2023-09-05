@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&family=Share+Tech+Mono&display=swap");
+
+/* Common styles for all screen sizes */
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  background-color: rgb(21, 21, 22);
+  color: white;
+}
+a {
+  text-decoration: none;
+}
+
+/* Styles for screens smaller than 768px (e.g., mobile devices) */
+@media (max-width: 768px) {
+  .main_heading {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  /* Add more responsive styles as needed */
+}
+
+/* Styles for screens between 768px and 1024px (e.g., tablets) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .main_heading {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 15px;
+  }
+
+  /* Add more responsive styles as needed */
+}
+
+/* Styles for screens larger than 1024px (e.g., desktop) */
+@media (min-width: 1025px) {
+  .main_heading {
+    text-align: left;
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+
+  /* Add more responsive styles as needed */
+}
+
+.home-page {
+  background: none;
+  text-align: left;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.movie-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.movie-card {
+  /* border: 1px solid #ccc; */
+  animation: card 3s forwards;
+  /* border-radius: 15px; */
+  padding: 20px;
+  /* box-shadow: 1px 2px 15px rgba(255, 255, 255, 0.3); */
+  width: 300px;
+  height: 205px;
+  text-align: center;
+  background-color: transparent;
+}
+
+.favourite_icon {
+  color: rgb(157, 78, 221);
+  font-size: 30px;
+  cursor: pointer;
+  transition: all 0.2s;
+  position: absolute;
+  bottom: 7px;
+  right: 10px;
+}
+.favourite_icon:hover {
+  color: #333;
+}
+.favourited {
+  color: rgb(157, 78, 221);
+}
+
+.movie-card img {
+  position:absolute;
+  width: 95%;
+  height:auto;
+  left: 50%;
+  top: 0;
+  z-index: -1;
+  overflow: hidden;
+  transform: translateX(-50%);
+  border-radius: 20px;
+}
+
+.icon {
+  background-color: #666;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  font-size: 30px;
+  color: #ccc;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.main_heading {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.icon:hover {
+  color: white;
+  background-color: #333;
+}
+
+.movie-card h2 {
+  margin: 0;
+}
+
+.movie-card p {
+  font-size: 14px;
+  color: #666;
+}
+
+.pagination {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  background-color: rgb(21, 21, 22);
+  justify-content: space-around;
+  width: 100%;
+  color: #ccc;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 0px;
+}
+
+.pagination_btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(21, 21, 22);
+  color: white;
+  border-radius: 0%;
+  border: none;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+.pagination_btns:hover {
+  color: rgb(157, 78, 221) !important;
+}
+
+.pagination_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: none;
+  gap: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+@keyframes card {
+  0% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(-10px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}

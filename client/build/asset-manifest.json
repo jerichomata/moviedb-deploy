@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e0691b58.css",
+    "main.js": "/static/js/main.9287ba6f.js",
+    "static/media/empty-film-purple.jpg": "/static/media/empty-film-purple.640c4ee677853ce2cc4b.jpg",
+    "index.html": "/index.html",
+    "main.e0691b58.css.map": "/static/css/main.e0691b58.css.map",
+    "main.9287ba6f.js.map": "/static/js/main.9287ba6f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e0691b58.css",
+    "static/js/main.9287ba6f.js"
+  ]
+}
